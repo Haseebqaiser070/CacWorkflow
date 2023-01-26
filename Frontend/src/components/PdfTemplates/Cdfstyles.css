@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0
+}
+.main{
+    padding: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+}
+h4{
+    font-size: 12pt;
+}
+.head{
+    background-color:"#000";
+    color:"#fff"
+}
+
+@media all {
+    .page-break {
+      display: none;
+    }
+  }
+  
+  @media print {
+    html, body {
+      height: initial !important;
+      overflow: initial !important;
+      -webkit-print-color-adjust: exact;
+    }
+  }
+  
+  @media print {
+    .page-break {
+      margin-top: 1rem;
+      display: block;
+      page-break-before: auto;
+    }
+  }
+  
+  @page {
+    size: auto;
+    margin: 20mm;
+  }
